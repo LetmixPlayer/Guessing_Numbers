@@ -1,5 +1,7 @@
 ## English
 
+This project is licensed under the terms of the MIT license.
+
 Welcome to play Guessing Numbers game!
 
 You can guess a number between 1 and 1000 in this game.
@@ -7,6 +9,8 @@ You can guess a number between 1 and 1000 in this game.
 Warning: This game can only run in Microsoft Windows.
 
 ## 中文
+
+此项目根据 MIT 许可证的条款获得许可
 
 欢迎来玩猜数游戏!
 
