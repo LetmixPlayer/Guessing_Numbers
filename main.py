@@ -3,7 +3,7 @@ from random import randint
 from tkinter import *
 from tkinter import messagebox
 from random import randint
-from . import log
+import log
 
 def setshu(big : int, small : int):
     global root, shu
@@ -75,7 +75,7 @@ shu.set("请输入一个数(1~1000)")
 lab = StringVar(root)
 l1 = Label(root, text='猜数游戏', width=40)
 l2 = Label(root, textvariable=shu, height=2)
-l3 = Entry(root)
+l3 = Entry(root, text="")
 l4 = Button(root, text='猜数', command=buttonclick)
 l5 = Label(root, textvariable=lab)
 l1.bind("<Button-1>", labelclick)
