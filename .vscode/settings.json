@@ -1,0 +1,6 @@
+{
+    "workbench.externalBrowser": "edge",
+    "terminal.integrated.cwd": "",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "typescript.tsserver.nodePath": "node"
+}

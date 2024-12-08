@@ -3,7 +3,7 @@ from random import randint
 from tkinter import *
 from tkinter import messagebox
 from random import randint
-import log
+from . import log
 
 def setshu(big : int, small : int):
     global root, shu
@@ -11,7 +11,7 @@ def setshu(big : int, small : int):
     shu.set(f"请输入一个数({ shu.get() })")
     log.log("[Info|Counter] Reset text2")
 
-def buttonclick(event: object | None = None):
+def buttonclick(event = None):
     log.log("[Info|Button] Button is click")
     global a, mx, mn, l3, lab, ci
     b = l3.get()
@@ -29,12 +29,12 @@ def buttonclick(event: object | None = None):
             return
         else:
             if (a > b):
-                lab.set("猜小了!")
+                lab.set(f"猜小了，还剩{ 10 - ci - 1 }次!")
                 ci += 1
                 if (b > mn): mn = b
                 log.log("[Info|Comparator] The number is small")
             if (a < b):
-                lab.set("猜大了!")
+                lab.set(f"猜大了，还剩{ 10 - ci - 1 }次!")
                 if (b < mx): mx = b
                 ci += 1
                 log.log("[Info|Comparator] The number is big")
@@ -55,7 +55,7 @@ def buttonclick(event: object | None = None):
     log.log("[Info|Entry] Deleted all input")
     setshu(mx, mn)
 
-def labelclick(event : object):
+def labelclick(event = None):
     messagebox.showinfo("关于 猜数游戏", "By Letmix Player\nPowered by Python Tkinter")
     log.log("[Info|PaintedEggshell] Trigger about")
 

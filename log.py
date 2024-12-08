@@ -9,7 +9,7 @@ def log(message : str):
     a.write('\n' + message)
     a.close()
     try:
-        if (sys.argv[2] == "DebLet"): print(message)
+        if (sys.argv[0] == "DebLet"): print(message)
     except:
         pass
 
